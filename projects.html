@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects · Sophia Groom</title>
-    <meta name="description" content="Projects by Sophia Groom — Unity and Pico-8 games, RSA cryptography, and a roommate matching algorithm.">
+    <meta name="description" content="Projects by Sophia Groom — Pico-8 game, computer architecture, RSA cryptography, and a roommate matching algorithm.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20261112">
 </head>
 <body>
     <header class="site-header">
@@ -28,43 +28,40 @@
     <main class="page">
         <header class="page-intro reveal">
             <h1>Projects</h1>
-            <p>Selected work across game development, cryptography, and algorithmic systems. Playable embeds for the games are coming next.</p>
+            <p>Selected work from my tech resume. A playable Pico-8 embed is planned next.</p>
         </header>
 
         <section class="project-list" aria-label="Selected projects">
-            <article class="project reveal" id="unity-game">
-                <div>
-                    <p class="project-meta"><span>Unity</span><span>C#</span><span>Game</span></p>
-                    <h2>Unity Game</h2>
-                    <p>A 2D game built in Unity with keyboard movement, animated sprites, and interactive gameplay.</p>
-                    <ul>
-                        <li>Collision detection, physics, and audio feedback</li>
-                        <li>Level design shaped around a cohesive player loop</li>
-                    </ul>
-                </div>
-                <div class="project-aside">
-                    <div class="play-slot" data-play-slot="unity">
-                        Playable build coming soon
-                    </div>
-                    <p class="play-note">Placeholder for an in-browser playable build</p>
-                </div>
-            </article>
-
             <article class="project reveal" id="pico8-game">
                 <div>
                     <p class="project-meta"><span>Pico-8</span><span>Lua</span><span>Game</span></p>
-                    <h2>2D Pico-8 Game</h2>
-                    <p>Designed and programmed a complete 2D game in Lua inside the Pico-8 fantasy console.</p>
+                    <h2>Pico-8 Game</h2>
+                    <p>Designed and programmed a 2D game in Pico-8, implementing several basic game mechanics.</p>
                     <ul>
-                        <li>Core gameplay mechanics and player interactions</li>
-                        <li>Functional, playable loop constrained to Pico-8’s limits</li>
+                        <li>Player interactions and core gameplay loop in Lua</li>
+                        <li>Built within Pico-8’s constrained fantasy-console environment</li>
                     </ul>
                 </div>
                 <div class="project-aside">
                     <div class="play-slot" data-play-slot="pico8">
-                        Pico-8 embed coming soon
+                        Playable Pico-8 embed coming soon
                     </div>
                     <p class="play-note">Ready for a cart embed when you want to drop it in</p>
+                </div>
+            </article>
+
+            <article class="project reveal" id="architecture">
+                <div>
+                    <p class="project-meta"><span>MIPS</span><span>C</span><span>Architecture</span></p>
+                    <h2>Computer Architecture Projects</h2>
+                    <p>Programs in MIPS assembly and C covering memory management and data representation.</p>
+                    <ul>
+                        <li>Low-level practice with how software meets hardware</li>
+                        <li>Emphasis on memory, representation, and systems thinking</li>
+                    </ul>
+                </div>
+                <div class="project-aside">
+                    <p class="play-note">Systems · assembly · C</p>
                 </div>
             </article>
 
@@ -72,29 +69,29 @@
                 <div>
                     <p class="project-meta"><span>Python</span><span>Racket</span><span>Cryptography</span></p>
                     <h2>RSA Cryptography Implementation</h2>
-                    <p>Implemented RSA encryption and decryption with modular arithmetic for public-key operations.</p>
+                    <p>Implemented RSA encryption/decryption, modular arithmetic, and integer factorization including Pollard’s rho.</p>
                     <ul>
-                        <li>Applied Pollard's rho algorithm for integer factorization</li>
-                        <li>Explored the mathematical foundations behind RSA security</li>
+                        <li>Public-key operations grounded in modular arithmetic</li>
+                        <li>Factorization exploration tied to RSA security foundations</li>
                     </ul>
                 </div>
                 <div class="project-aside">
-                    <p class="play-note">Systems / math deep dive</p>
+                    <p class="play-note">Algorithms · math</p>
                 </div>
             </article>
 
             <article class="project reveal" id="roommate-matching">
                 <div>
-                    <p class="project-meta"><span>Python</span><span>JavaScript</span><span>Algorithms</span></p>
+                    <p class="project-meta"><span>Python</span><span>Algorithms</span></p>
                     <h2>Roommate Matching Algorithm</h2>
-                    <p>Preference-based matching that compares student data across eight compatibility criteria.</p>
+                    <p>Preference-based matching system comparing student data across eight compatibility criteria.</p>
                     <ul>
                         <li>Similarity logic to score and rank potential pairings</li>
-                        <li>Designed to surface suitable roommate matches from real preference data</li>
+                        <li>Designed around real preference data and practical matching</li>
                     </ul>
                 </div>
                 <div class="project-aside">
-                    <p class="play-note">Algorithms · matching systems</p>
+                    <p class="play-note">Matching systems</p>
                 </div>
             </article>
         </section>

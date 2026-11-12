@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20261112">
 </head>
 <body>
     <header class="site-header">
@@ -28,12 +28,20 @@
     <main class="page">
         <header class="page-intro reveal">
             <h1>Resume</h1>
-            <p>Computer Science student with experience across algorithms, systems coursework, and game development.</p>
+            <p>Latest tech resume — view the PDF below or download a copy for applications.</p>
             <div class="contact-actions" style="margin-top: 1.1rem;">
-                <a class="button button-primary" href="Sophia_Groom_Resume.docx" download>Download .docx</a>
+                <a class="button button-primary" href="Sophia_Groom_Resume.pdf" download>Download PDF</a>
                 <a class="button button-ghost" href="mailto:seg91@duke.edu">Email me</a>
             </div>
         </header>
+
+        <div class="reveal" style="margin-bottom: 2.5rem;">
+            <iframe
+                class="resume-frame"
+                title="Sophia Groom resume PDF"
+                src="Sophia_Groom_Resume.pdf#view=FitH"
+            ></iframe>
+        </div>
 
         <article class="resume-doc reveal">
             <header>
@@ -47,18 +55,18 @@
 
             <section class="resume-section">
                 <h2>Summary</h2>
-                <p>Computer Science student at Duke University and Duke Kunshan University with experience in algorithm design, systems-level coursework, and software development. Skilled in Python, Java, C, and JavaScript, with an interest in low-level programming, data structures, and the systems behind game engines.</p>
+                <p>Computation and Design student at Duke Kunshan University and Duke University with a Computer Science track and experience in software development, technical coursework, team leadership, and project management. Proficient in Python, Java, JavaScript, C, and Scheme, with experience working across China and the United States. Interested in software engineering, AI/ML, and technology-driven problem-solving.</p>
             </section>
 
             <section class="resume-section">
                 <h2>Education &amp; Achievements</h2>
                 <div class="resume-item">
                     <h3>Bachelor of Science (BS) · Computation and Design, Computer Science Track</h3>
-                    <p class="when">Duke University &amp; Duke Kunshan University Dual Degree · Expected 05/2028</p>
+                    <p class="when">Duke University &amp; Duke Kunshan University Dual Degree · GPA 3.47 · Expected 05/2028</p>
                 </div>
                 <div class="resume-item">
                     <h3>Associate of Science (AS) in University Studies</h3>
-                    <p class="when">Utah Valley University · 05/2024</p>
+                    <p class="when">Utah Valley University · GPA 3.84 · 05/2024</p>
                 </div>
             </section>
 
@@ -68,37 +76,32 @@
                 <p class="skill-row"><strong>Languages:</strong> Python · Java · JavaScript · Scheme · Lua · C</p>
                 <p class="skill-row"><strong>Tools:</strong> Git · GitHub · VS Code · Unity · Blender · Premiere Pro · Microsoft Office</p>
                 <p class="skill-row"><strong>Spoken:</strong> English (Native) · Chinese (Advanced)</p>
-                <p class="skill-row"><strong>Interests:</strong> Systems Programming · Data Structures and Algorithms · Game Engine Architecture</p>
             </section>
 
             <section class="resume-section">
                 <h2>Projects</h2>
                 <div class="resume-item">
-                    <h3>Unity Game · Unity, C#</h3>
-                    <ul>
-                        <li>Developed a 2D game with keyboard-based movement, animated sprites, and interactive gameplay mechanics.</li>
-                        <li>Implemented collision detection, physics, audio feedback, and level design for a cohesive player experience.</li>
-                    </ul>
-                </div>
-                <div class="resume-item">
-                    <h3>2D Game · Pico-8, Lua</h3>
-                    <ul>
-                        <li>Designed and programmed a 2D game in Lua, implementing core gameplay mechanics within the Pico-8 environment.</li>
-                        <li>Developed player interactions and game logic to create a functional, playable game with a cohesive gameplay loop.</li>
-                    </ul>
-                </div>
-                <div class="resume-item">
                     <h3>RSA Cryptography Implementation · Python, Racket</h3>
                     <ul>
-                        <li>Implemented RSA encryption and decryption using modular arithmetic for public-key cryptographic operations.</li>
-                        <li>Applied Pollard's rho algorithm for integer factorization, exploring the mathematical foundations of RSA security.</li>
+                        <li>Implemented RSA encryption/decryption, modular arithmetic, and integer factorization including Pollard’s rho.</li>
                     </ul>
                 </div>
                 <div class="resume-item">
-                    <h3>Roommate Matching Algorithm · Python, JavaScript</h3>
+                    <h3>Pico-8 Game · Lua</h3>
                     <ul>
-                        <li>Developed a preference-based matching algorithm comparing student data across eight compatibility criteria.</li>
-                        <li>Implemented matching and similarity logic to evaluate compatibility and identify suitable roommate pairings.</li>
+                        <li>Designed and programmed a 2D game in Pico-8, implementing several basic game mechanics.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h3>Computer Architecture Projects · MIPS, C</h3>
+                    <ul>
+                        <li>Developed programs using MIPS assembly and C, including memory management and data representation.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h3>Roommate Matching Algorithm · Python</h3>
+                    <ul>
+                        <li>Developed a preference-based matching system comparing student data across eight compatibility criteria.</li>
                     </ul>
                 </div>
             </section>
@@ -119,7 +122,6 @@
                     <p class="when">Fall 2024 – Present</p>
                     <ul>
                         <li>Represent DKU to prospective students and families by hosting campus tours and answering questions.</li>
-                        <li>Highlight campus life and the international environment to help prospective students make informed decisions.</li>
                     </ul>
                 </div>
             </section>
@@ -130,7 +132,7 @@
                     <h3>Personal Tutor · Self-Employed</h3>
                     <p class="when">05/2020 – Present</p>
                     <ul>
-                        <li>Provide instruction across multiple subjects, adapting explanations and learning strategies to different students.</li>
+                        <li>Provide individualized instruction across multiple subjects, adapting explanations and learning strategies to different students.</li>
                         <li>Expanded tutoring services across multiple schools, leveraging word-of-mouth referrals to grow business.</li>
                     </ul>
                 </div>
