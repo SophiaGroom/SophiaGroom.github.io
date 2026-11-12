@@ -1,20 +1,20 @@
 # SophiaGroom.github.io
 
-Personal portfolio site for Sophia Groom.
+Portfolio site for Sophia Groom — Computer Science student at Duke & Duke Kunshan University.
 
 ## Pages
 
 - `index.html` — home / hero
-- `projects.html` — selected work
-- `aboutme.html` — background and focus areas
-- `contact.html` — contact details and message form
+- `projects.html` — games, cryptography, matching algorithm
+- `aboutme.html` — reserved for personal writing
+- `resume.html` — viewable resume
+- `contact.html` — Duke email, LinkedIn, resume links
+- `Sophia_Groom_Resume.docx` — downloadable resume
 
 ## Local preview
-
-Open `index.html` in a browser, or serve the folder:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+Visit `http://localhost:8000`.

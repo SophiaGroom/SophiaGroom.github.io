@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact · Sophia Groom</title>
-    <meta name="description" content="Contact Sophia Groom for collaborations, questions, or project conversations.">
+    <meta name="description" content="Contact Sophia Groom — Duke email, LinkedIn, and resume for internship conversations.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,6 +19,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="aboutme.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
         </nav>
@@ -27,37 +28,45 @@
     <main class="page">
         <header class="page-intro reveal">
             <h1>Contact</h1>
-            <p>Have a project in mind, a question, or just want to say hello? I’d love to hear from you.</p>
+            <p>Reach out for internships, collaborations, or questions about my work.</p>
         </header>
 
         <div class="contact-layout">
-            <div class="contact-panel section-block reveal">
-                <h2>Start a conversation</h2>
-                <p>Email is the fastest way to reach me. Share a little about what you’re working on and I’ll get back to you.</p>
-                <p><a href="mailto:Sophia.groom24@gmail.com">Sophia.groom24@gmail.com</a></p>
+            <div class="section-block reveal">
+                <h2>Get in touch</h2>
+                <ul class="contact-links">
+                    <li>
+                        <span>Duke email</span>
+                        <a href="mailto:seg91@duke.edu">seg91@duke.edu</a>
+                    </li>
+                    <li>
+                        <span>LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/sophia-groom" target="_blank" rel="noopener noreferrer">linkedin.com/in/sophia-groom</a>
+                    </li>
+                    <li>
+                        <span>Location</span>
+                        <a href="resume.html">Durham, NC &amp; Kunshan, China</a>
+                    </li>
+                </ul>
+                <div class="contact-actions">
+                    <a class="button button-primary" href="resume.html">View resume</a>
+                    <a class="button button-ghost" href="Sophia_Groom_Resume.docx" download>Download .docx</a>
+                </div>
             </div>
 
-            <form class="contact-form reveal" id="contact-form" novalidate>
-                <label>
-                    Name
-                    <input type="text" name="name" autocomplete="name" required>
-                </label>
-                <label>
-                    Email
-                    <input type="email" name="email" autocomplete="email" required>
-                </label>
-                <label>
-                    Message
-                    <textarea name="message" required></textarea>
-                </label>
-                <button class="button button-solid" type="submit">Send message</button>
-                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-            </form>
+            <aside class="resume-panel reveal">
+                <h2>Resume</h2>
+                <p>Full education, skills, projects, leadership, and work history — formatted for the site and available as a download.</p>
+                <div class="contact-actions">
+                    <a class="button button-solid" href="resume.html">Open resume page</a>
+                </div>
+            </aside>
         </div>
     </main>
 
     <footer class="site-footer">
         <p>&copy; <span data-year></span> Sophia Groom</p>
+        <p><a href="mailto:seg91@duke.edu">seg91@duke.edu</a> · <a href="https://www.linkedin.com/in/sophia-groom" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     </footer>
 
     <script src="script.js" defer></script>

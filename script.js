@@ -36,32 +36,12 @@
             }
           });
         },
-        { threshold: 0.16, rootMargin: "0px 0px -40px 0px" }
+        { threshold: 0.14, rootMargin: "0px 0px -36px 0px" }
       );
 
       revealNodes.forEach((node) => observer.observe(node));
     } else {
       revealNodes.forEach((node) => node.classList.add("is-visible"));
     }
-  }
-
-  const form = document.querySelector("#contact-form");
-  const status = document.querySelector("#form-status");
-
-  if (form && status) {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-
-      if (!form.checkValidity()) {
-        status.textContent = "Please fill in your name, email, and message.";
-        form.reportValidity();
-        return;
-      }
-
-      const data = new FormData(form);
-      const name = String(data.get("name") || "").trim();
-      status.textContent = `Thanks${name ? `, ${name}` : ""}. Your message is ready — connect your email service to send it live.`;
-      form.reset();
-    });
   }
 })();
