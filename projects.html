@@ -3,18 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects · Sophia Groom</title>
+    <meta name="description" content="Selected projects by Sophia Groom spanning interfaces, systems, and editorial web experiences.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-    </nav> 
-    <h1>Projects</h1>
-    <p>Welcome to my website.</p>
+    <header class="site-header">
+        <a class="brand" href="index.html">Sophia Groom</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" aria-current="page">Projects</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page">
+        <header class="page-intro reveal">
+            <h1>Projects</h1>
+            <p>A growing collection of work exploring clarity, atmosphere, and usable structure on the web.</p>
+        </header>
+
+        <section class="project-list" aria-label="Selected projects">
+            <a class="project reveal" href="contact.html">
+                <div>
+                    <h2>Atelier Landing</h2>
+                    <p>A full-bleed portfolio landing study focused on brand-first hierarchy, restrained motion, and a calm studio mood.</p>
+                </div>
+                <span class="project-meta">Web · Design</span>
+            </a>
+
+            <a class="project reveal" href="contact.html">
+                <div>
+                    <h2>Northline Notes</h2>
+                    <p>An editorial reading experience for long-form writing — soft paper texture, generous type, and quiet navigation.</p>
+                </div>
+                <span class="project-meta">Editorial · UI</span>
+            </a>
+
+            <a class="project reveal" href="contact.html">
+                <div>
+                    <h2>Harbor Checklist</h2>
+                    <p>A lightweight task system prototype emphasizing keyboard-friendly flows and clear empty states.</p>
+                </div>
+                <span class="project-meta">Product · Front-end</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span data-year></span> Sophia Groom</p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

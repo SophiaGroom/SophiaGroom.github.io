@@ -3,18 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact · Sophia Groom</title>
+    <meta name="description" content="Contact Sophia Groom for collaborations, questions, or project conversations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-    </nav> 
-    <h1>Contact</h1>
-    <p>Welcome to my website.</p>
+    <header class="site-header">
+        <a class="brand" href="index.html">Sophia Groom</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page">
+        <header class="page-intro reveal">
+            <h1>Contact</h1>
+            <p>Have a project in mind, a question, or just want to say hello? I’d love to hear from you.</p>
+        </header>
+
+        <div class="contact-layout">
+            <div class="contact-panel section-block reveal">
+                <h2>Start a conversation</h2>
+                <p>Email is the fastest way to reach me. Share a little about what you’re working on and I’ll get back to you.</p>
+                <p><a href="mailto:Sophia.groom24@gmail.com">Sophia.groom24@gmail.com</a></p>
+            </div>
+
+            <form class="contact-form reveal" id="contact-form" novalidate>
+                <label>
+                    Name
+                    <input type="text" name="name" autocomplete="name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" autocomplete="email" required>
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" required></textarea>
+                </label>
+                <button class="button button-solid" type="submit">Send message</button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span data-year></span> Sophia Groom</p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

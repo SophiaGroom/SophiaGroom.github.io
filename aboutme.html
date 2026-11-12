@@ -3,18 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About · Sophia Groom</title>
+    <meta name="description" content="About Sophia Groom — a portfolio focused on clear interfaces, thoughtful systems, and careful craft.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-    </nav> 
-    <h1>About Me</h1>
-    <p>Welcome to my website.</p>
+    <header class="site-header">
+        <a class="brand" href="index.html">Sophia Groom</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="aboutme.html" aria-current="page">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page">
+        <header class="page-intro reveal">
+            <h1>About me</h1>
+            <p>I care about the quiet details that make digital products feel trustworthy — hierarchy, pacing, and language that gets out of the way.</p>
+        </header>
+
+        <div class="about-layout">
+            <div class="section-block reveal">
+                <h2>A bit of background</h2>
+                <p>I’m Sophia, a builder focused on web experiences that balance clarity with atmosphere. I enjoy taking a rough idea from sketch to polished page — structure first, then motion, type, and tone.</p>
+                <p>This site is my home base for selected work, experiments, and ways to reach me. I’m always refining the craft: cleaner layouts, stronger storytelling, and interfaces people can navigate without friction.</p>
+
+                <h2>What I focus on</h2>
+                <ul class="focus-list">
+                    <li>
+                        <strong>Interface design</strong>
+                        Layout, typography, and visual rhythm for pages that feel composed instead of crowded.
+                    </li>
+                    <li>
+                        <strong>Front-end build</strong>
+                        Semantic HTML, accessible patterns, and CSS that holds up across screen sizes.
+                    </li>
+                    <li>
+                        <strong>Product storytelling</strong>
+                        Turning features and process into narratives that are easy to scan and remember.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="about-portrait reveal" role="img" aria-label="Collaborative workspace with soft natural light"></div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span data-year></span> Sophia Groom</p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
