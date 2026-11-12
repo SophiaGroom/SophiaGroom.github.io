@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects · Sophia Groom</title>
-    <meta name="description" content="Selected projects by Sophia Groom spanning interfaces, systems, and editorial web experiences.">
+    <meta name="description" content="Projects by Sophia Groom — Unity and Pico-8 games, RSA cryptography, and a roommate matching algorithm.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,6 +19,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html" aria-current="page">Projects</a></li>
                 <li><a href="aboutme.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -27,38 +28,81 @@
     <main class="page">
         <header class="page-intro reveal">
             <h1>Projects</h1>
-            <p>A growing collection of work exploring clarity, atmosphere, and usable structure on the web.</p>
+            <p>Selected work across game development, cryptography, and algorithmic systems. Playable embeds for the games are coming next.</p>
         </header>
 
         <section class="project-list" aria-label="Selected projects">
-            <a class="project reveal" href="contact.html">
+            <article class="project reveal" id="unity-game">
                 <div>
-                    <h2>Atelier Landing</h2>
-                    <p>A full-bleed portfolio landing study focused on brand-first hierarchy, restrained motion, and a calm studio mood.</p>
+                    <p class="project-meta"><span>Unity</span><span>C#</span><span>Game</span></p>
+                    <h2>Unity Game</h2>
+                    <p>A 2D game built in Unity with keyboard movement, animated sprites, and interactive gameplay.</p>
+                    <ul>
+                        <li>Collision detection, physics, and audio feedback</li>
+                        <li>Level design shaped around a cohesive player loop</li>
+                    </ul>
                 </div>
-                <span class="project-meta">Web · Design</span>
-            </a>
+                <div class="project-aside">
+                    <div class="play-slot" data-play-slot="unity">
+                        Playable build coming soon
+                    </div>
+                    <p class="play-note">Placeholder for an in-browser playable build</p>
+                </div>
+            </article>
 
-            <a class="project reveal" href="contact.html">
+            <article class="project reveal" id="pico8-game">
                 <div>
-                    <h2>Northline Notes</h2>
-                    <p>An editorial reading experience for long-form writing — soft paper texture, generous type, and quiet navigation.</p>
+                    <p class="project-meta"><span>Pico-8</span><span>Lua</span><span>Game</span></p>
+                    <h2>2D Pico-8 Game</h2>
+                    <p>Designed and programmed a complete 2D game in Lua inside the Pico-8 fantasy console.</p>
+                    <ul>
+                        <li>Core gameplay mechanics and player interactions</li>
+                        <li>Functional, playable loop constrained to Pico-8’s limits</li>
+                    </ul>
                 </div>
-                <span class="project-meta">Editorial · UI</span>
-            </a>
+                <div class="project-aside">
+                    <div class="play-slot" data-play-slot="pico8">
+                        Pico-8 embed coming soon
+                    </div>
+                    <p class="play-note">Ready for a cart embed when you want to drop it in</p>
+                </div>
+            </article>
 
-            <a class="project reveal" href="contact.html">
+            <article class="project reveal" id="rsa">
                 <div>
-                    <h2>Harbor Checklist</h2>
-                    <p>A lightweight task system prototype emphasizing keyboard-friendly flows and clear empty states.</p>
+                    <p class="project-meta"><span>Python</span><span>Racket</span><span>Cryptography</span></p>
+                    <h2>RSA Cryptography Implementation</h2>
+                    <p>Implemented RSA encryption and decryption with modular arithmetic for public-key operations.</p>
+                    <ul>
+                        <li>Applied Pollard's rho algorithm for integer factorization</li>
+                        <li>Explored the mathematical foundations behind RSA security</li>
+                    </ul>
                 </div>
-                <span class="project-meta">Product · Front-end</span>
-            </a>
+                <div class="project-aside">
+                    <p class="play-note">Systems / math deep dive</p>
+                </div>
+            </article>
+
+            <article class="project reveal" id="roommate-matching">
+                <div>
+                    <p class="project-meta"><span>Python</span><span>JavaScript</span><span>Algorithms</span></p>
+                    <h2>Roommate Matching Algorithm</h2>
+                    <p>Preference-based matching that compares student data across eight compatibility criteria.</p>
+                    <ul>
+                        <li>Similarity logic to score and rank potential pairings</li>
+                        <li>Designed to surface suitable roommate matches from real preference data</li>
+                    </ul>
+                </div>
+                <div class="project-aside">
+                    <p class="play-note">Algorithms · matching systems</p>
+                </div>
+            </article>
         </section>
     </main>
 
     <footer class="site-footer">
         <p>&copy; <span data-year></span> Sophia Groom</p>
+        <p><a href="mailto:seg91@duke.edu">seg91@duke.edu</a> · <a href="https://www.linkedin.com/in/sophia-groom" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     </footer>
 
     <script src="script.js" defer></script>
