@@ -4,18 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophia Groom</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfolio of Sophia Groom — thoughtful interfaces, clear systems, and work that feels calm and intentional.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-    </nav> 
-    <h1>Sophia Groom</h1>
-    <p>Welcome to my website.</p>
+    <header class="site-header">
+        <a class="brand" href="index.html">Sophia Groom</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-label="Introduction">
+            <div class="hero-media" role="img" aria-label="Soft daylight filling a quiet studio workspace"></div>
+            <div class="hero-content">
+                <p class="hero-brand">Sophia Groom</p>
+                <h1 class="hero-line">Designing calm digital experiences.</h1>
+                <p class="hero-copy">I shape clear interfaces and thoughtful systems for the web — work that feels intentional, human, and easy to return to.</p>
+                <div class="cta-row">
+                    <a class="button button-primary" href="projects.html">View projects</a>
+                    <a class="button button-ghost" href="contact.html">Get in touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span data-year></span> Sophia Groom</p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
