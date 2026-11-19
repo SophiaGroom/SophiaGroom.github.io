@@ -183,9 +183,9 @@ main {
 .hero-content {
   position: relative;
   z-index: 1;
-  width: min(1100px, calc(100% - 2.2rem));
-  margin: 0 auto;
-  padding: clamp(2rem, 5vh, 3.4rem) 0 clamp(2.4rem, 6vh, 3.8rem);
+  width: 100%;
+  margin: 0;
+  padding: clamp(2rem, 5vh, 3.4rem) clamp(1.1rem, 4vw, 2.75rem) clamp(2.4rem, 6vh, 3.8rem);
   min-height: calc(100vh - 4.1rem);
   display: flex;
   flex-direction: column;
@@ -195,6 +195,8 @@ main {
 
 .hero-top {
   max-width: 46rem;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .hero-kicker {
