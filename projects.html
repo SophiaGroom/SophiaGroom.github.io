@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261119f">
+    <link rel="stylesheet" href="styles.css?v=20261119g">
 </head>
 <body>
     <header class="site-header">
@@ -29,32 +29,34 @@
         <header class="projects-hero reveal">
             <p class="projects-kicker">Games in progress &amp; playable builds</p>
             <h1 class="projects-title">Projects</h1>
+            <p class="projects-credit">Coded and designed by me.</p>
         </header>
 
         <section class="game-stack" aria-label="Games">
-            <article class="game-feature reveal" id="hunger-games">
-                <div class="game-copy">
-                    <p class="game-engine">Unity</p>
-                    <h2>The Hunger Games: Election Day</h2>
-                    <p class="game-blurb">In progress — finishing by December 4.</p>
-                </div>
-                <div class="play-slot play-slot-lg" data-play-slot="unity-hunger-games">
-                    Playable build coming December 4
-                </div>
-            </article>
+            <div class="game-pair" aria-label="Unity games">
+                <article class="game-card reveal" id="hunger-games">
+                    <div class="play-slot play-slot-lg" data-play-slot="unity-hunger-games">
+                        Playable build coming December 4
+                    </div>
+                    <div class="game-copy">
+                        <p class="game-engine">Unity</p>
+                        <h2>The Hunger Games: Election Day</h2>
+                        <p class="game-blurb">In progress — finishing by December 4.</p>
+                    </div>
+                </article>
 
-            <article class="game-feature reveal" id="rage-room">
-                <div class="game-copy">
-                    <p class="game-engine">Unity</p>
-                    <h2>Rage Room</h2>
-                    <p class="game-blurb">Unity project.</p>
-                </div>
-                <div class="play-slot play-slot-lg" data-play-slot="unity-rage-room">
-                    Playable build coming soon
-                </div>
-            </article>
+                <article class="game-card reveal" id="rage-room">
+                    <div class="play-slot play-slot-lg" data-play-slot="unity-rage-room">
+                        Playable build coming soon
+                    </div>
+                    <div class="game-copy">
+                        <p class="game-engine">Unity</p>
+                        <h2>Rage Room</h2>
+                    </div>
+                </article>
+            </div>
 
-            <div class="pico-pair" aria-label="Pico-8 games">
+            <div class="game-pair" aria-label="Pico-8 games">
                 <article class="game-card reveal" id="pico8-game-1">
                     <div class="play-slot" data-play-slot="pico8-1">
                         Pico-8 embed coming soon
@@ -62,7 +64,6 @@
                     <div class="game-copy">
                         <p class="game-engine">Pico-8</p>
                         <h2>Pico-8 Game 1</h2>
-                        <p class="game-blurb">Coded and designed by me.</p>
                     </div>
                 </article>
 
@@ -73,7 +74,6 @@
                     <div class="game-copy">
                         <p class="game-engine">Pico-8</p>
                         <h2>Pico-8 Game 2</h2>
-                        <p class="game-blurb">Coded and designed by me.</p>
                     </div>
                 </article>
             </div>

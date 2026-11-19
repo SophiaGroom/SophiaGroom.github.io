@@ -423,12 +423,19 @@ main {
 .projects-title {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(4rem, 14vw, 8.5rem);
+  font-size: clamp(3.2rem, 10vw, 6.2rem);
   font-weight: 600;
   font-optical-sizing: auto;
-  line-height: 0.86;
-  letter-spacing: -0.045em;
+  line-height: 1;
+  letter-spacing: normal;
   color: var(--slate);
+}
+
+.projects-credit {
+  margin: 0.85rem 0 0;
+  font-family: var(--font-body);
+  font-size: 1.08rem;
+  color: var(--text-muted);
 }
 
 .game-stack {
@@ -436,22 +443,13 @@ main {
   gap: clamp(2rem, 5vw, 3rem);
 }
 
-.game-feature {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: clamp(1rem, 3vw, 2rem);
-  align-items: stretch;
-  padding-bottom: clamp(1.5rem, 3vw, 2rem);
-  border-bottom: 1px solid var(--line);
-}
-
 .game-copy h2,
 .project h2 {
   margin: 0 0 0.45rem;
   font-family: var(--font-display);
-  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  font-size: clamp(1.45rem, 2.6vw, 1.9rem);
   font-weight: 600;
-  letter-spacing: -0.02em;
+  letter-spacing: normal;
   color: var(--slate);
 }
 
@@ -471,7 +469,7 @@ main {
   font-size: 1.05rem;
 }
 
-.pico-pair {
+.game-pair {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(1.2rem, 3vw, 2rem);
@@ -709,13 +707,12 @@ main {
 
 @media (max-width: 860px) {
   .contact-layout,
-  .game-feature,
-  .pico-pair {
+  .game-pair {
     grid-template-columns: 1fr;
   }
 
   .projects-title {
-    font-size: clamp(3.4rem, 18vw, 5.5rem);
+    font-size: clamp(2.8rem, 14vw, 4.4rem);
   }
 }
 
