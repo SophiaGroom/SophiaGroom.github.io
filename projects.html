@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects · Sophia Groom</title>
-    <meta name="description" content="Projects by Sophia Groom — Pico-8 game, computer architecture, RSA cryptography, and a roommate matching algorithm.">
+    <meta name="description" content="Games by Sophia Groom — Unity and Pico-8 projects you can play.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261119">
+    <link rel="stylesheet" href="styles.css?v=20261119f">
 </head>
 <body>
     <header class="site-header">
@@ -25,75 +25,58 @@
         </nav>
     </header>
 
-    <main class="page">
-        <header class="page-intro reveal">
-            <h1>Projects</h1>
-            <p>Selected work from my tech resume. A playable Pico-8 embed is planned next.</p>
+    <main class="page projects-page">
+        <header class="projects-hero reveal">
+            <p class="projects-kicker">Games in progress &amp; playable builds</p>
+            <h1 class="projects-title">Projects</h1>
         </header>
 
-        <section class="project-list" aria-label="Selected projects">
-            <article class="project reveal" id="pico8-game">
-                <div>
-                    <p class="project-meta"><span>Pico-8</span><span>Lua</span><span>Game</span></p>
-                    <h2>Pico-8 Game</h2>
-                    <p>Designed and programmed a 2D game in Pico-8, implementing several basic game mechanics.</p>
-                    <ul>
-                        <li>Player interactions and core gameplay loop in Lua</li>
-                        <li>Built within Pico-8’s constrained fantasy-console environment</li>
-                    </ul>
+        <section class="game-stack" aria-label="Games">
+            <article class="game-feature reveal" id="hunger-games">
+                <div class="game-copy">
+                    <p class="game-engine">Unity</p>
+                    <h2>The Hunger Games: Election Day</h2>
+                    <p class="game-blurb">In progress — finishing by December 4.</p>
                 </div>
-                <div class="project-aside">
-                    <div class="play-slot" data-play-slot="pico8">
-                        Playable Pico-8 embed coming soon
+                <div class="play-slot play-slot-lg" data-play-slot="unity-hunger-games">
+                    Playable build coming December 4
+                </div>
+            </article>
+
+            <article class="game-feature reveal" id="rage-room">
+                <div class="game-copy">
+                    <p class="game-engine">Unity</p>
+                    <h2>Rage Room</h2>
+                    <p class="game-blurb">Unity project.</p>
+                </div>
+                <div class="play-slot play-slot-lg" data-play-slot="unity-rage-room">
+                    Playable build coming soon
+                </div>
+            </article>
+
+            <div class="pico-pair" aria-label="Pico-8 games">
+                <article class="game-card reveal" id="pico8-game-1">
+                    <div class="play-slot" data-play-slot="pico8-1">
+                        Pico-8 embed coming soon
                     </div>
-                    <p class="play-note">Ready for a cart embed when you want to drop it in</p>
-                </div>
-            </article>
+                    <div class="game-copy">
+                        <p class="game-engine">Pico-8</p>
+                        <h2>Pico-8 Game 1</h2>
+                        <p class="game-blurb">Coded and designed by me.</p>
+                    </div>
+                </article>
 
-            <article class="project reveal" id="architecture">
-                <div>
-                    <p class="project-meta"><span>MIPS</span><span>C</span><span>Architecture</span></p>
-                    <h2>Computer Architecture Projects</h2>
-                    <p>Programs in MIPS assembly and C covering memory management and data representation.</p>
-                    <ul>
-                        <li>Low-level practice with how software meets hardware</li>
-                        <li>Emphasis on memory, representation, and systems thinking</li>
-                    </ul>
-                </div>
-                <div class="project-aside">
-                    <p class="play-note">Systems · assembly · C</p>
-                </div>
-            </article>
-
-            <article class="project reveal" id="rsa">
-                <div>
-                    <p class="project-meta"><span>Python</span><span>Racket</span><span>Cryptography</span></p>
-                    <h2>RSA Cryptography Implementation</h2>
-                    <p>Implemented RSA encryption/decryption, modular arithmetic, and integer factorization including Pollard’s rho.</p>
-                    <ul>
-                        <li>Public-key operations grounded in modular arithmetic</li>
-                        <li>Factorization exploration tied to RSA security foundations</li>
-                    </ul>
-                </div>
-                <div class="project-aside">
-                    <p class="play-note">Algorithms · math</p>
-                </div>
-            </article>
-
-            <article class="project reveal" id="roommate-matching">
-                <div>
-                    <p class="project-meta"><span>Python</span><span>Algorithms</span></p>
-                    <h2>Roommate Matching Algorithm</h2>
-                    <p>Preference-based matching system comparing student data across eight compatibility criteria.</p>
-                    <ul>
-                        <li>Similarity logic to score and rank potential pairings</li>
-                        <li>Designed around real preference data and practical matching</li>
-                    </ul>
-                </div>
-                <div class="project-aside">
-                    <p class="play-note">Matching systems</p>
-                </div>
-            </article>
+                <article class="game-card reveal" id="pico8-game-2">
+                    <div class="play-slot" data-play-slot="pico8-2">
+                        Pico-8 embed coming soon
+                    </div>
+                    <div class="game-copy">
+                        <p class="game-engine">Pico-8</p>
+                        <h2>Pico-8 Game 2</h2>
+                        <p class="game-blurb">Coded and designed by me.</p>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
