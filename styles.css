@@ -431,10 +431,6 @@ main {
   color: var(--slate);
 }
 
-.projects-title span:last-child {
-  color: var(--brick);
-}
-
 .game-stack {
   display: grid;
   gap: clamp(2rem, 5vw, 3rem);
