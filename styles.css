@@ -216,36 +216,64 @@ main {
   animation: riseIn 0.9s var(--ease) 0.2s forwards;
 }
 
-.hero-line {
-  margin: 0 0 0.85rem;
-  max-width: 22ch;
+.hero-hire {
+  margin: 0 0 1.5rem;
+  max-width: 38rem;
   font-family: var(--font-display);
-  font-size: clamp(1.4rem, 3.1vw, 2.15rem);
+  font-size: clamp(1.25rem, 2.8vw, 1.85rem);
   font-weight: 500;
   font-optical-sizing: auto;
-  line-height: 1.25;
+  line-height: 1.35;
   color: var(--mist);
   opacity: 0;
   transform: translateY(22px);
   animation: riseIn 0.9s var(--ease) 0.35s forwards;
 }
 
-.hero-copy {
-  margin: 0 0 1.55rem;
-  max-width: 40ch;
-  color: var(--on-dark-muted);
+.hero-hire a {
+  display: inline-block;
+  margin-left: 0.55rem;
+  color: var(--blush);
+  font-family: var(--font-body);
+  font-size: 0.92em;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(216, 177, 158, 0.55);
+}
+
+.hero-hire a:hover {
+  color: #f0d7c8;
+  border-bottom-color: #f0d7c8;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.4rem;
   opacity: 0;
   transform: translateY(22px);
   animation: riseIn 0.9s var(--ease) 0.5s forwards;
+}
+
+.hero-links a {
+  color: var(--on-dark);
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(237, 242, 243, 0.35);
+  padding-bottom: 0.1rem;
+}
+
+.hero-links a:hover {
+  color: var(--blush);
+  border-bottom-color: var(--blush);
 }
 
 .cta-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
-  opacity: 0;
-  transform: translateY(22px);
-  animation: riseIn 0.9s var(--ease) 0.65s forwards;
 }
 
 .button {
@@ -346,34 +374,6 @@ main {
   margin: 0 0 1rem;
   max-width: 44rem;
   color: var(--text-soft);
-}
-
-.home-strip {
-  width: min(1080px, calc(100% - 2.2rem));
-  margin: -1.5rem auto 3.5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  padding: 1.1rem 0 0;
-  border-top: 1px solid var(--line);
-}
-
-.home-strip article {
-  padding: 1rem 0.2rem 0;
-}
-
-.home-strip h2 {
-  margin: 0 0 0.35rem;
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--brick);
-}
-
-.home-strip p {
-  margin: 0;
-  color: var(--text-muted);
-  font-size: 0.95rem;
 }
 
 .about-placeholder {
@@ -673,7 +673,6 @@ main {
 }
 
 @media (max-width: 860px) {
-  .home-strip,
   .contact-layout,
   .project {
     grid-template-columns: 1fr;
@@ -735,9 +734,8 @@ main {
 
   .hero-kicker,
   .hero-brand,
-  .hero-line,
-  .hero-copy,
-  .cta-row,
+  .hero-hire,
+  .hero-links,
   .reveal {
     opacity: 1;
     transform: none;
