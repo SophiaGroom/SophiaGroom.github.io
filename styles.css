@@ -521,6 +521,11 @@ main {
   background: #1a2a2e;
 }
 
+.game-frame-square {
+  aspect-ratio: 1 / 1;
+  min-height: 240px;
+}
+
 .game-embed-actions {
   display: flex;
   flex-wrap: wrap;

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pico-8 Prototype · Sophia Groom</title>
+  <link rel="stylesheet" href="../pico8-player/player.css">
+  <style>
+    :root {
+      --slate: #304c53;
+      --mist: #c2d4d9;
+      --clay: #a56d50;
+      --paper: #edf2f3;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: "Source Sans 3", "Avenir Next", sans-serif;
+      background: linear-gradient(165deg, #f4f1ec 0%, var(--paper) 55%, #d7e2e5 100%);
+      color: var(--slate);
+    }
+    body {
+      display: grid;
+      place-items: center;
+      padding: 1.2rem;
+    }
+    .shell {
+      width: min(720px, 100%);
+      display: grid;
+      gap: 0.85rem;
+    }
+    h1 {
+      margin: 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+    .meta {
+      margin: 0;
+      color: #5d6d72;
+      font-size: 0.95rem;
+    }
+    #player {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      max-height: min(720px, 80vh);
+      border: 1px solid rgba(48, 76, 83, 0.16);
+      border-radius: 2px;
+      background: #1a2a2e;
+      overflow: hidden;
+    }
+    #status {
+      min-height: 1.3rem;
+      color: var(--clay);
+      font-size: 0.92rem;
+    }
+    .hint {
+      margin: 0;
+      color: #5d6d72;
+      font-size: 0.88rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div>
+      <h1>Pico-8 Prototype</h1>
+      <p class="meta">My first ever Pico-8 project · arrow keys to move, Z/X to jump</p>
+    </div>
+    <div id="player" aria-label="Pico-8 game player"></div>
+    <output id="status" aria-live="polite">Loading cartridge…</output>
+    <p class="hint">Click the game once if controls don’t respond right away.</p>
+  </div>
+
+  <script type="module">
+    import { createPico8Player } from "../pico8-player/main/player.mjs";
+
+    const status = document.querySelector("#status");
+    const root = document.querySelector("#player");
+
+    try {
+      const player = await createPico8Player({
+        root,
+        useDefaultAssets: true,
+      });
+
+      player.on("fault", ({ error }) => {
+        status.textContent = `${error.code}: ${error.message}`;
+      });
+
+      player.on("state", (event) => {
+        if (event.message) status.textContent = event.message;
+      });
+
+      const response = await fetch("./project_pico8.p8");
+      if (!response.ok) {
+        throw new Error(`Could not load cartridge (${response.status})`);
+      }
+
+      const bytes = new Uint8Array(await response.arrayBuffer());
+      await player.loadCart(bytes, {
+        displayName: "project_pico8.p8",
+        contentId: "sophia-pico8-prototype",
+      });
+      await player.start();
+      status.textContent = "Playing · first Pico-8 prototype";
+
+      window.addEventListener("pagehide", (event) => {
+        if (!event.persisted) void player.dispose();
+      });
+    } catch (error) {
+      status.textContent = error instanceof Error ? error.message : String(error);
+    }
+  </script>
+</body>
+</html>

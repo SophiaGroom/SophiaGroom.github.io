@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261120">
+    <link rel="stylesheet" href="styles.css?v=20261120b">
 </head>
 <body>
     <header class="site-header">
@@ -70,12 +70,22 @@
 
             <div class="game-pair" aria-label="Pico-8 games">
                 <article class="game-card reveal" id="pico8-game-1">
-                    <div class="play-slot" data-play-slot="pico8-1">
-                        Pico-8 embed coming soon
+                    <div class="game-embed" data-play-slot="pico8-1">
+                        <iframe
+                            class="game-frame game-frame-square"
+                            title="Pico-8 Prototype"
+                            src="games/pico8-prototype/index.html"
+                            allow="gamepad; autoplay"
+                            loading="lazy"
+                        ></iframe>
+                        <div class="game-embed-actions">
+                            <a class="button button-solid" href="games/pico8-prototype/index.html" target="_blank" rel="noopener noreferrer">Open game page</a>
+                        </div>
                     </div>
                     <div class="game-copy">
                         <p class="game-engine">Pico-8</p>
-                        <h2>Pico-8 Game 1</h2>
+                        <h2>First Prototype</h2>
+                        <p class="game-blurb">My first ever Pico-8 project.</p>
                     </div>
                 </article>
 
