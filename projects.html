@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261119g">
+    <link rel="stylesheet" href="styles.css?v=20261120">
 </head>
 <body>
     <header class="site-header">
@@ -46,8 +46,20 @@
                 </article>
 
                 <article class="game-card reveal" id="rage-room">
-                    <div class="play-slot play-slot-lg" data-play-slot="unity-rage-room">
-                        Playable build coming soon
+                    <div class="game-embed" data-play-slot="unity-rage-room">
+                        <iframe
+                            id="rage-room-frame"
+                            class="game-frame"
+                            title="The Rage Room"
+                            src="games/rage-room/index.html"
+                            allow="fullscreen; gamepad; autoplay"
+                            allowfullscreen
+                            loading="lazy"
+                        ></iframe>
+                        <div class="game-embed-actions">
+                            <button class="button button-solid" type="button" id="rage-room-fullscreen">Enter fullscreen</button>
+                            <a class="button button-ghost game-open-link" href="games/rage-room/index.html" target="_blank" rel="noopener noreferrer">Open game page</a>
+                        </div>
                     </div>
                     <div class="game-copy">
                         <p class="game-engine">Unity</p>
@@ -86,5 +98,24 @@
     </footer>
 
     <script src="script.js" defer></script>
+    <script>
+      document.getElementById("rage-room-fullscreen")?.addEventListener("click", () => {
+        const frame = document.getElementById("rage-room-frame");
+        if (!frame) return;
+
+        const requestFs =
+          frame.requestFullscreen ||
+          frame.webkitRequestFullscreen ||
+          frame.msRequestFullscreen;
+
+        if (requestFs) {
+          requestFs.call(frame).catch(() => {
+            frame.contentWindow?.postMessage("rage-room-fullscreen", "*");
+          });
+        } else {
+          frame.contentWindow?.postMessage("rage-room-fullscreen", "*");
+        }
+      });
+    </script>
 </body>
 </html>
